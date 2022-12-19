@@ -4,7 +4,7 @@ let firstNumber = prompt ('Inserisci primo numero');
 let numFirstNumber =parseInt(firstNumber);
 let secondNumber = prompt ('Inserisci secondo numero');
 let numSecondNumber =parseInt(secondNumber);
-if (isNaN(firstNumber) && isNaN(secondNumber) ){
+if (isNaN(firstNumber) || isNaN(secondNumber) ){
     alert('Hai inserito un valore non numerico');
 }
 else {
