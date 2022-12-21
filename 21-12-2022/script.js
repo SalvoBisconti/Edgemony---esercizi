@@ -150,32 +150,25 @@ function operation (result =[]){
     }
     switch (ChooseOperation) {
         case '+':
-           for(let i=0; i<2; i++) {
            let result= numbers [0] + numbers [1] ;
            alert (' La somma è ' + (result));
            return result
-           }
            break;
         case '-':
-            for(let i=0; i<2; i++) {
                 let result= numbers [0] - numbers [1] ;
                 alert (' La differenza è ' + (result));
-                return result
-                }
+                return result 
                 break;
-         case '*':
-            for(let i=0; i<2; i++) {
+        case '*':    
                 let result= numbers [0] * numbers [1] ;
                 alert (' Il prodotto è ' + (result));
                 return result
-                }
                 break;
          case '/':
-            for(let i=0; i<2; i++) {
                 let result= numbers [0] / numbers [1] ;
                 alert (' Il quoziente è ' + (result));
                 return result
-                }
+             
                 break;
     }
 
