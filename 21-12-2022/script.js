@@ -107,7 +107,7 @@ function operation (result =[]){
     else {
     switch (ChooseOperation) {
         case '+':
-            result[0]= num1[0] + num2[0];
+            result[0]= (+num1[0]) + (+num2[0]);
             alert (' La somma è ' + (result));
             return result [0];
             break;
@@ -150,7 +150,7 @@ function operation (result =[]){
     }
     switch (ChooseOperation) {
         case '+':
-           result= numbers [0] + numbers [1] ;
+           result= (+numbers [0]) + (+numbers [1]) ;
            alert (' La somma è ' + (result));
            return result
            break;
