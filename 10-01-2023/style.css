@@ -1,0 +1,87 @@
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(128, 128, 128, 0.325);
+  }
+  
+  .hero {
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    margin-bottom: 50px;
+  }
+  
+  .heroImg {
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .heroTitle {
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    color: rgb(242, 237, 237);
+    font-size: 3rem;
+    z-index: 3;
+  }
+
+  .heroText {
+    position: absolute;
+    top: 180px;
+    left: 30%;
+    color: rgb(232, 228, 228);
+    font-size: 1rem;
+  }
+
+  .productsCont {
+    margin-top: 0;
+    width: 100vw;
+  
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+.divTitle {
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(128, 128, 128, 0.212);
+    
+}
+
+.cardDiv {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 200px;
+    height: 380px;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  
+  .cardTitle {
+    text-align: center;
+    margin: 14px 0;
+    color: grey;
+  }
+  
+  .cardDescription {
+    padding: 0px 12px;
+  }
