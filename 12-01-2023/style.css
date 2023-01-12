@@ -1,0 +1,80 @@
+body {
+    background-color: beige;
+    margin: 0;
+}
+
+.nameSec {
+    margin: 0;
+    height: 80px;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.775);
+    position: relative;
+}
+h1 {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+}
+
+.mainSec {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.daysSec {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.todo_list {
+    margin: 0 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid lightgrey;
+  }
+  
+  .todo {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgb(240, 240, 240);
+    width: 100%;
+    border-radius: 6px;
+  }
+  
+  .circle-check {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+  }
+  
+  .completed,
+  .uncompleted {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.35s;
+  }
+  
+  .completed:hover,
+  .uncompleted:hover {
+    background: rgba(137, 43, 226, 0.283);
+  }
+  
+  .completed {
+    background-color: black;
+  }
+  
+  .uncompleted {
+    border: 1px solid black;
+  }
