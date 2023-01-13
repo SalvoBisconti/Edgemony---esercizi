@@ -21,19 +21,46 @@ console.log (todoList)
 // Crare una todo list personale, con logica in linea a quanto visto a lezione e 
 // applicando lo stile preferito
 
-// PER PROBLEMI DI TEMPISTICA NON SONO RIUSCITO A COMPLETARLO
-
 // const bodyEl = qS ('body');
 // const nameSec = cE ('section');
 // const titleSec = cE ('h1');
 // const daysSec = cE ('section');
-// const days = cE ('h2')
 // const mainSec= cE ('section');
-// const todoList= cE ('div');
+
 // const firstSec= cE ('div');
 // const secondSec= cE ('div');
 // const thirdSec= cE ('div');
+// const daysArr= ["Lunedì", "Mercoledì", "Venerdì"];
 
+// nameSec.className= 'nameSec';
+// mainSec.className= 'mainSec';
+// daysSec.className= 'daysSec';
+// firstSec.className= 'firstDay';
+// secondSec.className= 'secondDay';
+// thirdSec.className= 'thirdDay';
+
+
+
+// titleSec.textContent= 'Scheda di allenamento ';
+
+
+// const daysCompile = (day) => {
+//     const days = cE ('h2');
+//     days.textContent= day;
+//     daysSec.appendChild (days)
+// }
+
+// daysArr.forEach((day) => daysCompile (day));
+// myTodo.filter ((todo) => (todo.day === "Lunedì")).forEach ((todo) => todoGenerator (todo.order, todo.title, todo.serie, todo.category, firstSec));
+// myTodo.filter ((todo) => (todo.day === "Mercoledì")).forEach ((todo) => todoGenerator (todo.order,todo.title, todo.serie,todo.category, secondSec));
+// myTodo.filter ((todo) => (todo.day === "Venerdì")).forEach ((todo) => todoGenerator (todo.order,todo.title, todo.serie,todo.category, thirdSec));
+
+
+
+
+// mainSec.append (firstSec, secondSec, thirdSec);
+// nameSec.appendChild(titleSec);
+// bodyEl.append(nameSec, daysSec, mainSec);
 // nameSec.className= 'nameSec';
 // mainSec.className= 'mainSec';
 // daysSec.className= 'daysSec';
