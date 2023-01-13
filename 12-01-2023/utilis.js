@@ -1,27 +1,39 @@
 const qS = (element) => document.querySelector(element);
 const cE = (type) => document.createElement(type);
 
-const todoGenerator = (id, title, todoList) => {
+const todoGenerator = (order, title, serie, category, todoList) => {
     const todoEl = cE('div');
+    const mainEl = cE('div');
+    const typeTrainEl = cE('div');
     const isCompletedEl = cE('div');
     const titleEl = cE ('h2');
-    const idEl = cE('p');
-  
+    const orderEl = cE('h3');
+    const seriesEl = cE('h3');
+    const typeTraning = cE('div');
+
+    
+
     isCompletedEl.className = 'circle-check';
     isCompletedEl ? isCompletedEl.classList.add('completed') : null;
     todoEl.className= 'todo';
-    idEl.className = 'id';
+    typeTrainEl.className = 'typeTrainDiv';
+    mainEl.className= 'mainElementDiv';
+    orderEl.className = 'order';
     titleEl.className = 'title';
-
-    
+    seriesEl.className = 'serie';
+    typeTraning.className = 'typeTrain';
     titleEl.textContent = title;
-    idEl.textContent = id;
-
+    seriesEl.textContent= serie;
+    orderEl.textContent = order;
+    typeTraning.textContent = category;
+  
     isCompletedEl.addEventListener('click', () => {
         isCompletedEl.classList.toggle('completed');
       });
-    
-    todoEl.append(isCompletedEl, idEl, titleEl);
+
+    typeTrainEl.appendChild (typeTraning);
+    mainEl.append(isCompletedEl, orderEl, titleEl, seriesEl);
+    todoEl.append(mainEl, typeTrainEl);
     todoList.appendChild (todoEl);
   };
 
