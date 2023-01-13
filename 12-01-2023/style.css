@@ -1,6 +1,5 @@
 body {
-    background-color: beige;
-    margin: 0;
+  background: linear-gradient(180deg, rgba(86,92,152,1) 0%, rgba(23,12,121,1) 23%, rgba(0,0,0,1) 50%);    color: white;
 }
 
 .nameSec {
@@ -11,45 +10,76 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.775);
     position: relative;
+    
 }
 h1 {
     margin: 0;
     position: absolute;
     top: 30%;
-    right: 30%;
+    right: 35%;
 }
-
+.daysSec:nth-last-child(2) {
+  margin-bottom: 15px;
+}
 .mainSec {
     display: flex;
     justify-content: space-between;
-
+    border-radius: 20px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.775);
+    background-image: url(./image/img.jpeg);
 }
 
 .daysSec {
     height: 50px;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    
+    margin-bottom: 0;
 }
-.todo_list {
-    margin: 0 12px;
+
+
+  .todo {
+    padding: 0 12px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    gap: 5px;
+    background: rgb(240, 240, 240);
+    border-radius: 6px;
     border: 2px solid lightgrey;
+    position: relative;
+    color: black;
   }
-  
-  .todo {
+  .mainElementDiv {
     padding: 0 12px;
     display: flex;
     align-items: center;
     gap: 12px;
-    background: rgb(240, 240, 240);
     width: 100%;
-    border-radius: 6px;
   }
   
+  .typeTrain {
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .firstDay, .secondDay, .thirdDay {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+  }
+
+  .thirdDay {
+    margin-right: 40px;
+  }
+  .typeTrain {
+    display: flex;
+   
+    top: 50px;
+    right: 100px;
+  }
   .circle-check {
     border: 1px solid black;
     width: 20px;
