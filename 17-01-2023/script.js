@@ -78,7 +78,7 @@ const loadingMsg = cE ('h2');
         buttonEl.addEventListener ('click',() => {
             cart.push(element);
             cartCreation ();
-            console.log(cart);
+            alert ('Prodotto aggiunto al carrello');
                });
 
         textEl.append (titleEl, descriptionEl);
