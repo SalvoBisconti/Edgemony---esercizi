@@ -11,14 +11,13 @@ const divContainer = cE("div");
 const buttonCardGen = cE("button");
 const loadingMsg = cE("h2");
 
-divContainer.className = "div_Container";
-
 buttonCardGen.addEventListener("click", () => {
   loadingMsg.textContent = "Caricamento in corso ...";
 
   fetch("https://api.escuelajs.co/api/v1/products")
     .then((res) => res.json())
     .then((data) => {
+      titleGen();
       cardGenerator(data);
     })
     .catch((e) => {
@@ -30,6 +29,12 @@ buttonCardGen.addEventListener("click", () => {
       console.log(e);
     });
 });
+const titleGen = () => {
+  const titleProdSec = cE("h1");
+  titleProdSec.className = "title_prd_sec";
+  titleProdSec.textContent = "Lista prodotti";
+  document.body.appendChild(titleProdSec);
+};
 
 const buttonColorSelect = () => {
   firstButtonEl.classList.add("btn_active");
@@ -136,6 +141,7 @@ const cartPopulator = (item) => {
 buttonCardGen.className = "card_gen_but";
 buttonCardGen.textContent = "SCOPRI I NOSTRI PRODOTTI";
 loadingMsg.className = "loadMsg";
+divContainer.className = "div_Container";
 
 cartLink.addEventListener("click", () => {
   cartMenu.classList.toggle("show");
