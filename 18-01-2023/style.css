@@ -190,7 +190,13 @@
   cursor: pointer;
   background-color: crimson;
   color: black;
-  border-radius: 5%;
+  border-radius: 6%;
+  border: none;
+}
+
+.title_prd_sec {
+  display: flex;
+  margin-left: 6%;
 }
 
 .cart_prod {
@@ -227,11 +233,12 @@
 /* addProducts.html */
 .form_page {
   display: flex;
+  height: 670px;
 }
 
 .img_section {
   display: flex;
-  height: 100vh;
+  height: 670px;
   width: 35%;
 }
 
@@ -242,6 +249,7 @@
   flex-direction: column;
   width: 65%;
   border-top: 1px solid black;
+  height: 670px;
 }
 .form_section h1 {
   font-weight: 800;
@@ -249,7 +257,7 @@
 
 .img_form {
   width: 100%;
-  height: 100vh;
+  height: 670px;
   object-fit: cover;
 }
 
@@ -307,6 +315,41 @@
   font-size: smaller;
 }
 
+.divMsgError {
+  display: flex;
+  width: 400px;
+  height: 600px;
+  z-index: 9;
+  background-color: rgba(255, 255, 255, 0.813);
+  box-shadow: 0px 10px 10px rgb(146, 142, 142);
+  position: absolute;
+  top: 22%;
+  right: 5%;
+}
+
+.divMsgError h1 {
+  display: flex;
+  color: black;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.exitBtn {
+  position: absolute;
+  right: 0%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.loadMsgForm {
+  height: 400px;
+  width: 400px;
+}
 @media screen and (min-width: 768px) {
   .hero {
     height: 400px;
@@ -323,5 +366,20 @@
   }
   .cart_btn {
     margin-right: 90px;
+  }
+
+  .divMsgError {
+    width: 1100px;
+    height: 500px;
+    top: 25%;
+    right: 5%;
+  }
+
+  .divMsgError h1 {
+    top: 50%;
+    left: 20%;
+  }
+  .title_prd_sec {
+    margin-left: 5%;
   }
 }
