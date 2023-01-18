@@ -17,7 +17,18 @@ postForm.addEventListener("submit", (event) => {
     categoryId: parseInt(inputCategory.value),
     images: [inputImage.value],
   };
-  postData(newObj);
+
+  if (
+    inputTitle.value.length === 0 ||
+    inputImage.value.length === 0 ||
+    inputCategory.value.length === 0 ||
+    inputDescription.value.length === 0 ||
+    inputPrice.value.length === 0
+  ) {
+    createMsg("Uno o più campi non sono stati compilati");
+  } else {
+    postData(newObj);
+  }
 });
 
 const postData = (obj) => {
@@ -30,15 +41,31 @@ const postData = (obj) => {
   })
     .then((res) => res.json())
     .then((obj) => {
+      createMsg(
+        "Il tuo prodotto è stato correttamente caricato nel nostro store"
+      );
       console.log(obj);
     })
-
     .catch((e) => {
-      const errorMsg = cE("h1");
-      errorMsg.className = "errorMsg";
-      errorMsg.textContent =
-        "Siamo spiacenti, si è verificato un errore. Riprova più tardi ";
-      document.body.appendChild(errorMsg);
+      createMsg("Siamo spiacenti, si è verificato un errore");
       console.log(e);
     });
+};
+
+const createMsg = (string) => {
+  const divEl = cE("div");
+  const exitButton = cE("button");
+  const errorText = cE("h1");
+
+  divEl.className = "divMsgError";
+  exitButton.className = "exitBtn";
+  exitButton.textContent = "X";
+  errorText.textContent = string;
+
+  exitButton.addEventListener("click", () => {
+    divEl.remove();
+  });
+
+  divEl.append(exitButton, errorText);
+  document.body.appendChild(divEl);
 };
