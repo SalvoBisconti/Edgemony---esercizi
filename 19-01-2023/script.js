@@ -9,11 +9,15 @@ const secondButtonEl = qS(".second_btn");
 const thirdButtonEl = qS(".third_btn");
 const divContainer = cE("div");
 const filterBtn = qS(".filter_btn");
+const extBtnFilter = qS(".ext_btn_filter");
+const filterDiv = qS(".filter_menu");
 
 fetch("https://api.escuelajs.co/api/v1/products")
   .then((res) => res.json())
   .then((data) => {
     cardGenerator(data);
+    // cardFiltred(data);
+    console.log(data);
   })
   .catch((e) => {
     const errorMsg = cE("h1");
@@ -127,18 +131,35 @@ const cartPopulator = (item) => {
 
 divContainer.className = "div_Container";
 
-cartLink.addEventListener("click", () => {
-  cartMenu.classList.toggle("show");
-});
+cartLink.addEventListener("click", () => cartMenu.classList.toggle("show"));
+filterBtn.addEventListener("click", () => filterDiv.classList.toggle("show"));
+extBtnFilter.addEventListener("click", () => filterDiv.remove());
 
-// filterBtn.addEventListener("click", () => {
-//   // const filterDiv = qS("filter_menu");
-//   // const frsInputFilter = cE("input");
-//   // const secInputFilter = cE("input");
-//   // const exitBtn = cE("button");
-//   // filterDiv.className = "filterArea";
-//   document.body.appendChild(filterDiv);
-// });
+// const cardFiltred = (element) => {
+//   const takeNumber = qS("#filterForm");
+//   takeNumber.addEventListener("submit", (event) => {
+//     event.preventDefault();
+
+//     const a = qS("#fstValue");
+//     const b = qS("#scnValue");
+//     const ab = [parseInt(a.value), parseInt(b.value)];
+
+//     const filterArrayObj = [];
+//     element.filter((element) => {
+//       if (element.category.id >= ab[0] && element.category.id <= ab[1]) {
+//         const objFilt = {
+//           title: element.title,
+//           description: element.description,
+//           images: element.images,
+//         };
+//         filterArrayObj.push(objFilt);
+
+//         cardGenerator2(filterArrayObj);
+//         console.log(filterArrayObj);
+//       }
+//     });
+//   });
+// };
 
 buttonColorSelect();
 

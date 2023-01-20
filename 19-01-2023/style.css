@@ -67,9 +67,6 @@
   padding: 20px;
 }
 
-.show {
-  opacity: 1 !important;
-}
 .hero {
   height: 400px;
   display: flex;
@@ -268,7 +265,7 @@ a:hover {
   z-index: 9;
   box-shadow: 0 0 2px rgba(132, 132, 132, 0.775);
 }
-/* DA COMPLETARE */
+
 .filter_menu {
   background-color: white;
   box-shadow: 0px 10px 10px #000;
@@ -307,14 +304,18 @@ a:hover {
   margin: 5px;
   border: none;
 }
-.filter_menu button {
+.ext_btn_filter {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   right: 5%;
 }
 .filter_menu h3 {
   margin-top: 20px;
+}
+.show {
+  opacity: 1 !important;
 }
 
 /* PRODUCTS & CATEGORY HTML PAGE*/
