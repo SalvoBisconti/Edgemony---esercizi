@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quote-main {
+  border: 2px solid black;
+  height: 150px;
+  width: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  background-color: greenyellow;
+  height: 150px;
+  width: 500px;
+  z-index: -1;
+  right: 10px;
+  top: 10px;
+}
+
+.quote-main img {
+  height: 40px;
+  width: 40px;
+}
+
+.quote-main button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 0 2px black;
+  cursor: pointer;
+}
