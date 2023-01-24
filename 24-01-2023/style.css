@@ -8,7 +8,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("bg.jpeg");
+  background-image: url("./img/bg.jpeg");
   background-size: cover;
 }
 .main-users {
@@ -31,7 +31,8 @@ body {
   border-radius: 10px;
   height: 300px;
   width: 250px;
-  background-color: rgba(219, 213, 219, 0.684);
+  background-image: url("./img/card.jpeg");
+  background-size: cover;
 }
 
 .card img {
@@ -39,6 +40,7 @@ body {
   border: 2px solid black;
   height: 150px;
   width: 150px;
+  background-color: aliceblue;
 }
 
 .divText {
