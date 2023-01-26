@@ -1,5 +1,10 @@
+// Esercizio 1
+// Sulla base della lezione del giorno, creare un mock in formato JSON. Riprendere uno degli esercizi passati (es. generatore di una card prodotto),
+// eliminare eventuale chiamata fetch ed utilizzare il mock JSON creato per popolare i dati.
+
 // Avanzato
-// Continuare l'esercizio avanzato della lezione di ieri 25-01-2023
+// Creare un grafico a piacere basato su una api a scelta oppure su un mock costruito ad hoc.
+
 import { cE, qS } from "./utils.js";
 import usersJson from "./mocks.json" assert { type: "json" };
 

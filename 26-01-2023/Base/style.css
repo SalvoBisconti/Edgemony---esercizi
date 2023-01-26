@@ -1,0 +1,39 @@
+body {
+  margin: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
+}
+
+button {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 100%;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.load-btn {
+  height: 80px;
+  width: 180px;
+  background-color: black;
+  border-radius: 20px;
+  color: rgb(201, 198, 198);
+  border: 1px solid rgb(94, 92, 92);
+  cursor: pointer;
+}
+
+h1 {
+  border: 1px solid rgb(75, 75, 75);
+  padding: 30px 40px 30px 40px;
+
+  border-radius: 12px;
+  color: rgb(201, 198, 198);
+  background-color: black;
+  font-size: 5rem;
+}
