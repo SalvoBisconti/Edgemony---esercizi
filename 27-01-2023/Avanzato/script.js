@@ -13,7 +13,6 @@ form.addEventListener("submit", (e) => {
         movieName.value.toLowerCase() === item.title.toLowerCase() ||
         movieName.value.toUpperCase() === item.title.toUpperCase()
       ) {
-        // const movie = cE("div");
         const imgEl = cE("img");
         const titleEl = cE("h2");
         movie.className = "movie-div";
