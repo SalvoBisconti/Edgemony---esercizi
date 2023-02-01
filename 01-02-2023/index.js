@@ -1,7 +1,7 @@
 const http = require("http");
 const PORT = 3001;
 
-let message = "Pagina iniziale";
+let message = "Server funzionante";
 let articles = "Qui trovi gli articoli";
 let users = "Qui trovi le informazioni sugli utenti";
 let comments = "Qui trovi i commenti";
