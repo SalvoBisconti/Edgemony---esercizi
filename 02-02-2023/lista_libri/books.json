@@ -1,0 +1,38 @@
+[
+  {
+    "Titolo": "Spare. Il minore",
+    "Autore": "Prince Harry",
+    "Genere": "Biografie e autobiografie",
+    "Prezzo": "23,75 €"
+  },
+  {
+    "Titolo": "Padre ricco padre povero. Quello che i ricchi insegnano ai figli sul denaro",
+    "Autore": "Robert T. Kiyosaki",
+    "Genere": "Biografie e autobiografie",
+    "Prezzo": "11,87 €"
+  },
+  {
+    "Titolo": "L'interpretazione dei sogni. Ediz. integrale",
+    "Autore": "Sigmund Freud",
+    "Genere": "Psicologia",
+    "Prezzo": "14,90 € "
+  },
+  {
+    "Titolo": "Pensa e arricchisci te stesso",
+    "Autore": "Napoleon Hill",
+    "Genere": "Lavoro e raggiungimento del successo",
+    "Prezzo": "12,35 €"
+  },
+  {
+    "Titolo": "L'uomo più ricco di Babilonia",
+    "Autore": "George Samuel Clason",
+    "Genere": "Gestione delle finanze personali",
+    "Prezzo": "9,97 €"
+  },
+  {
+    "Titolo": "The intelligent investor",
+    "Autore": "Benjamin Graham",
+    "Genere": "Economia",
+    "Prezzo": "20,64 €"
+  }
+]
