@@ -25,6 +25,12 @@ ul {
   background-attachment: fixed;
   background-size: cover;
 }
+.error-body {
+  background-image: url(../img/bg-error.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 
 .navbar {
   height: 50px;
@@ -111,9 +117,9 @@ p {
 
 .errorLink {
   position: absolute;
-  bottom: 30%;
+  bottom: 15%;
   right: 10%;
-  color: black;
+  color: rgb(238, 234, 234);
   font-size: 2.2rem;
 }
 @media screen and (max-width: 768px) {
