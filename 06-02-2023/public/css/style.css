@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+body {
+  background-image: url(../img/bg.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.519);
+}
+
+.menu {
+  height: 30%;
+  width: 50%;
+  z-index: 3;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  background-color: rgba(240, 248, 255, 0.641);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: brown;
+  text-decoration: none;
+}
+a:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,52 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "Titolo": "Spare. Il minore",
+      "Autore": "Prince Harry",
+      "Genere": "Biografie e autobiografie",
+      "Prezzo": "23,75 €",
+      "image": "https://m.media-amazon.com/images/I/91Szm8FpdfL.jpg"
+    },
+    {
+      "id": 2,
+      "Titolo": "Padre ricco padre povero",
+      "Autore": "Robert T. Kiyosaki",
+      "Genere": "Biografie e autobiografie",
+      "Prezzo": "11,87 €",
+      "image": "https://m.media-amazon.com/images/I/71e3s6py2HL.jpg"
+    },
+    {
+      "id": 3,
+      "Titolo": "L'interpretazione dei sogni. Ediz. integrale",
+      "Autore": "Sigmund Freud",
+      "Genere": "Psicologia",
+      "Prezzo": "14,90 € ",
+      "image": "https://m.media-amazon.com/images/I/61xDm+A6CtL.jpg"
+    },
+    {
+      "id": 4,
+      "Titolo": "Pensa e arricchisci te stesso",
+      "Autore": "Napoleon Hill",
+      "Genere": "Lavoro e raggiungimento del successo",
+      "Prezzo": "12,35 €",
+      "image": "https://m.media-amazon.com/images/I/81tPjHyViFL.jpg"
+    },
+    {
+      "id": 5,
+      "Titolo": "L'uomo più ricco di Babilonia",
+      "Autore": "George Samuel Clason",
+      "Genere": "Gestione delle finanze personali",
+      "Prezzo": "9,97 €",
+      "image": "https://m.media-amazon.com/images/I/71fe+8LgxML.jpg"
+    },
+    {
+      "id": 6,
+      "Titolo": "The intelligent investor",
+      "Autore": "Benjamin Graham",
+      "Genere": "Economia",
+      "Prezzo": "20,64 €",
+      "image": "https://m.media-amazon.com/images/I/41vQ4DGEmoL._SX325_BO1,204,203,200_.jpg"
+    }
+  ]
+}
