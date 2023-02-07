@@ -16,12 +16,10 @@ app.post("/api/users", (req, res) => {
   if (!id || !name || !username || !email) {
     return res.status(400).json({ succes: false, msg: "Dati incompleti" });
   }
-  return res
-    .status(200)
-    .json({
-      succes: true,
-      user: { id: id, name: name, username: username, email: email },
-    });
+  return res.status(200).json({
+    succes: true,
+    user: { id: id, name: name, username: username, email: email },
+  });
 });
 
 app.listen(PORT, () => console.log(`Server: ${PORT} attivo `));
