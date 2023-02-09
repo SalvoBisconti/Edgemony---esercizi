@@ -32,9 +32,7 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/mi-presento", (req, res) => {
-  res.render("mi-presento", {
-    name: "Salvo",
-  });
+  res.render("mi-presento");
 });
 
 app.listen(PORT, () => console.log(`Server in ascolto: ${PORT}`));
