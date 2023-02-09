@@ -9,6 +9,8 @@ const myPreference = {
   color: "rosso",
   season: "estate",
 };
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.set("view engine", "hbs");
 hbs.registerPartials(__dirname + "/views/partials");
@@ -21,8 +23,17 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+
 app.post("/login", (req, res) => {
-  res.render("post");
+  const { name } = req.body;
+  if (name) {
+    return res.status(200).render("login", {
+      welcome: `Benvenuto/a ${name}`,
+    });
+  }
 });
 
 app.get("/about", (req, res) => {
