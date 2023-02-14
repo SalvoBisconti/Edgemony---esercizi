@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "63eb9e4fa32127a430d00632"
+  },
+  "title": "Quel momento imbarazzante",
+  "type": "Comedy",
+  "relasedYear": "2014"
+},{
+  "_id": {
+    "$oid": "63eb9e4fa32127a430d00633"
+  },
+  "title": "Warrior",
+  "type": "Drama",
+  "relasedYear": "2011"
+},{
+  "_id": {
+    "$oid": "63eba255a32127a430d00636"
+  },
+  "title": "Inception",
+  "type": "Thriller",
+  "relasedYear": "2011"
+},{
+  "_id": {
+    "$oid": "63eba255a32127a430d00637"
+  },
+  "title": "Segui il tuo cuore",
+  "type": "Drama",
+  "relasedYear": "2010"
+},{
+  "_id": {
+    "$oid": "63eba3dca32127a430d00638"
+  },
+  "title": "The wolf of wall street",
+  "type": "Drama",
+  "relasedYear": "2013"
+},{
+  "_id": {
+    "$oid": "63eba3dca32127a430d00639"
+  },
+  "title": "Come un tuono",
+  "type": "Drama",
+  "relasedYear": "2013"
+}]
