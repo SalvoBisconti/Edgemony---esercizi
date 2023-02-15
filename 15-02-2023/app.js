@@ -1,5 +1,5 @@
 const { MongoClient } = require("mongodb");
-const url = "mongodb+srv://Salvo:forzamilan@cluster0.xtllcsv.mongodb.net/";
+const url = "mongodb+srv://Salvo:ciao123@cluster0.xtllcsv.mongodb.net/";
 const client = new MongoClient(url);
 
 const studentsObj = [
