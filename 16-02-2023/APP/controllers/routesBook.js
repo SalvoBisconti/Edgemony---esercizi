@@ -29,7 +29,7 @@ function insertRecord(req, res) {
 function updateRecord(req, res) {
   Book.updateOne({ _id: req.body._id }, req.body, { new: true }, (err, doc) => {
     if (!err) {
-      res.redirect("book-list");
+      res.redirect("books-list");
     } else {
       console.log("Errore durante l' update : " + err);
     }
