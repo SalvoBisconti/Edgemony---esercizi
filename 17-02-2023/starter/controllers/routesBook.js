@@ -21,7 +21,7 @@ function insertRecord(req, res) {
   book.type = req.body.type;
   book.price = req.body.price;
   book.save((err, doc) => {
-    if (!err) res.redirect("/book/books-list");
+    if (!err) res.redirect("books-list");
     else console.log(`Errore nell' inserimento: ${err}`);
   });
 }
@@ -29,7 +29,7 @@ function insertRecord(req, res) {
 function updateRecord(req, res) {
   Book.updateOne({ _id: req.body._id }, req.body, { new: true }, (err, doc) => {
     if (!err) {
-      res.redirect("/book/books-list");
+      res.redirect("books-list");
     } else {
       console.log("Errore durante l' update : " + err);
     }
