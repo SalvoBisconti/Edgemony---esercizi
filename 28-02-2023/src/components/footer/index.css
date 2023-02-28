@@ -1,0 +1,34 @@
+.footer {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.604);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  margin: 0;
+}
+.firstSec {
+  width: 20%;
+}
+
+.firstSec img {
+  padding: 10px;
+}
+.secondSec {
+  width: 70%;
+}
+.secondSec ul {
+  height: 100%;
+  width: 100%;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  list-style-type: none;
+}
+
+li:hover {
+  cursor: pointer;
+  color: white;
+}
