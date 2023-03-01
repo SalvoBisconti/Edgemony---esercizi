@@ -7,25 +7,13 @@ const Gallery = () => {
     "https://wallpapers.com/images/featured/92acb30ilmkjbmu9.jpg",
   ];
 
-  //   let sliderState = 0;
-  //   const rightButton = () => {
-
-  //     sliderState++;
-  //     if (sliderState > 2) {
-  //       sliderState = 0;
-  //     }
-  //   };
-
   return (
     <div className="Gallery">
-      <img className="gallery-img" src={imgArray[0]} alt="gallery img" />
-      <img className="gallery-img" src={imgArray[1]} alt="gallery img" />
-      <img className="gallery-img" src={imgArray[2]} alt="gallery img" />
-
-      {/* <div className="slider">
-        <button onClick={rightButton}> D </button>
-        <button onClick={leftButton}> S </button>
-      </div> */}
+      <div className="gallery">
+        {imgArray.map((img) => (
+          <img className="gallery-img" src={img} alt="gallery img" />
+        ))}
+      </div>
     </div>
   );
 };
