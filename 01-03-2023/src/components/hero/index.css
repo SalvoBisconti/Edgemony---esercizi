@@ -1,0 +1,26 @@
+.hero {
+  height: 500px;
+  position: relative;
+  width: 100vw;
+  display: flex;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-txt {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  font-size: 3.3rem;
+  color: white;
+}

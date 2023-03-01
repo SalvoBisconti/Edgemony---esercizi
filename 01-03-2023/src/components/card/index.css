@@ -1,0 +1,22 @@
+.card {
+  height: 350px;
+  width: 300px;
+  box-shadow: 0 0 4px grey;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-image: url(https://cdn.wallpapersafari.com/12/49/e1HDgu.jpg);
+  background-size: cover;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 4px white;
+  border-radius: 100%;
+}

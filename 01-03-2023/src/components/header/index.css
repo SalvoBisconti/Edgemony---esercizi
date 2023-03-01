@@ -1,0 +1,22 @@
+.header {
+  margin: 0;
+  height: 50px;
+  background-color: rgba(24, 24, 24, 0.919);
+}
+.list {
+  height: 100%;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: goldenrod;
+}
