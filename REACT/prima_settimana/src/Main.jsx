@@ -24,7 +24,7 @@ const Main = () => {
       <Slider />
       <Title name={"Personaggi"} />
       <ContainerCard />
-      {/* <Modal details={modal} setModal={setModal} /> */}
+      <Modal details={modal} setModal={setModal} />
     </div>
   );
 };

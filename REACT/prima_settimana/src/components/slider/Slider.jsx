@@ -11,7 +11,7 @@ const Slider = () => {
 
   const onClickChangeRight = () => {
     setCount(count + 1);
-    if (count > 1) {
+    if (count > 2) {
       setCount(count === 0);
       console.log("stop");
     }
@@ -20,7 +20,7 @@ const Slider = () => {
   const onClickChangeLeft = () => {
     setCount(count - 1);
 
-    if (count < 1) {
+    if (count < 0) {
       setCount(count === 2);
       console.log("stop");
     }
