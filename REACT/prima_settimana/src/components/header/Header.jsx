@@ -16,13 +16,13 @@ const Header = () => {
           {""}
           <a href="https://www.disneyplus.com/it-it/series/i-simpson/3ZoBZ52QHb4x">
             {" "}
-            Guarda adesso{" "}
+            Watch now{" "}
           </a>
         </li>
         <li>
           {" "}
           <a href="https://play.google.com/store/apps/details?id=com.ea.game.simpsons4_row&hl=it&gl=US">
-            Gioco
+            Game
           </a>
         </li>
       </ul>

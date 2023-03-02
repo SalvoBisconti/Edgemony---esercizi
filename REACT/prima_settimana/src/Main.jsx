@@ -21,9 +21,9 @@ const Main = () => {
         {count ? "☀️" : "🌙"}{" "}
       </button>
       <Hero />
-      <Title name={"Galleria"} />
+      <Title name={"Gallery"} />
       <Slider />
-      <Title name={"Personaggi"} />
+      <Title name={"Characters"} />
       <CardSection data={characters} setModal={setModal} />
       {modal ? <Modal details={modal} setModal={setModal} /> : null}
     </div>
