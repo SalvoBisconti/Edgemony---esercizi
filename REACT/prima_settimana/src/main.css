@@ -1,0 +1,21 @@
+.Main {
+  background-color: rgba(254, 212, 57);
+  color: black;
+  position: relative;
+}
+
+.darkMode {
+  background-color: rgb(42, 42, 42);
+  color: rgba(254, 212, 57);
+}
+
+.btn-mode {
+  font-size: 1.3rem;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.374);
+  border-radius: 100%;
+}

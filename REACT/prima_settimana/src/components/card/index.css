@@ -1,0 +1,42 @@
+.card {
+  height: 420px;
+  width: 300px;
+  box-shadow: 0 0 4px grey;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.366);
+}
+
+.img {
+  width: 200px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.bottom-area {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  margin: 0;
+  width: 100%;
+  border-end-end-radius: 12px;
+  border-end-start-radius: 12px;
+  background-color: rgba(240, 92, 59, 1);
+}
+
+.name {
+  margin: 15px;
+}
+
+.quote-btn {
+  cursor: pointer;
+  color: white;
+  margin: 10px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 8px;
+}
