@@ -1,11 +1,13 @@
-import CardSection from "./components/cardSection/CardSection";
+import { useState } from "react";
 import { characters } from "./mocks/characters";
-import Slider from "./components/slider";
+
+import CardSection from "./components/cardSection/CardSection";
+import Footer from "./components/footer";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Modal from "./components/modal/Modal";
+import Slider from "./components/slider";
 import Title from "./components/title/Title";
-import { useState } from "react";
 
 import "./main.css";
 
@@ -25,6 +27,7 @@ const Main = () => {
       <Slider />
       <Title name={"Characters"} />
       <CardSection data={characters} setModal={setModal} />
+      <Footer />
       {modal ? <Modal details={modal} setModal={setModal} /> : null}
     </div>
   );

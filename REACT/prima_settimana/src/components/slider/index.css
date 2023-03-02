@@ -22,6 +22,7 @@
   height: 100%;
   border: none;
   background-color: rgba(0, 0, 0, 0.2);
+  width: 4%;
 }
 
 .right-slider {
@@ -32,10 +33,18 @@
   height: 100%;
   border: none;
   background-color: rgba(0, 0, 0, 0.2);
+  width: 4%;
 }
 
 .right-slider:hover,
 .left-slider:hover {
   background-color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .right-slider,
+  .left-slider {
+    width: 8%;
+  }
 }

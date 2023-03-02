@@ -9,9 +9,8 @@ const Slider = () => {
   ];
   const [count, setCount] = useState(0);
 
-  const changeImg = () => {
+  const changeImg = () =>
     setCount((count - 1 + imgArray.length) % imgArray.length);
-  };
 
   return (
     <div className="Slider">
