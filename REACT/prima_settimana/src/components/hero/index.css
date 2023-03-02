@@ -21,6 +21,14 @@
   position: absolute;
   top: 40%;
   left: 40%;
-  font-size: 4.2rem;
+  font-size: 5rem;
   color: rgba(254, 212, 57);
+}
+
+@media screen and (max-width: 800px) {
+  .hero-txt {
+    top: 30%;
+    left: 30%;
+    font-size: 4rem;
+  }
 }

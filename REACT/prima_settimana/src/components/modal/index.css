@@ -13,6 +13,7 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
 }
 
 .modal-content {
@@ -29,6 +30,7 @@
 
 .texts-modal {
   color: rgba(240, 92, 59, 1);
+  overflow: scroll;
 }
 .img-modal {
   width: 180px;

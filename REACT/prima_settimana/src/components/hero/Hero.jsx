@@ -9,7 +9,7 @@ const Hero = () => {
         src="https://www.teahub.io/photos/full/3-32747_1920x1080-the-simpsons-wallpapers-los-simpson-wallpaper-4k.jpg"
         alt="hero"
       />
-      <h1 className="hero-txt">The Simpson</h1>
+      <h1 className="hero-txt">The Simpson quotes</h1>
     </div>
   );
 };

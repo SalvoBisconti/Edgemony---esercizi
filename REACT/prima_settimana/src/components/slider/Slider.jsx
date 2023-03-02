@@ -9,29 +9,17 @@ const Slider = () => {
   ];
   const [count, setCount] = useState(0);
 
-  const onClickChangeRight = () => {
-    setCount(count + 1);
-    if (count > 2) {
-      setCount(count === 0);
-      console.log("stop");
-    }
+  const changeImg = () => {
+    setCount((count - 1 + imgArray.length) % imgArray.length);
   };
 
-  const onClickChangeLeft = () => {
-    setCount(count - 1);
-
-    if (count < 0) {
-      setCount(count === 2);
-      console.log("stop");
-    }
-  };
   return (
     <div className="Slider">
       <img src={imgArray[count]} alt="image_slider" className="img-slider" />
-      <button className="left-slider" onClick={onClickChangeLeft}>
+      <button className="left-slider" onClick={changeImg}>
         {"< "}
       </button>
-      <button className="right-slider" onClick={onClickChangeRight}>
+      <button className="right-slider" onClick={changeImg}>
         {"> "}
       </button>
     </div>
