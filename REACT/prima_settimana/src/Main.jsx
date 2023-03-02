@@ -1,4 +1,5 @@
-import ContainerCard from "./components/cardSection/CardSection";
+import CardSection from "./components/cardSection/CardSection";
+import { characters } from "./mocks/characters";
 import Slider from "./components/slider";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
@@ -23,8 +24,8 @@ const Main = () => {
       <Title name={"Galleria"} />
       <Slider />
       <Title name={"Personaggi"} />
-      <ContainerCard />
-      <Modal details={modal} setModal={setModal} />
+      <CardSection data={characters} setModal={setModal} />
+      {modal ? <Modal details={modal} setModal={setModal} /> : null}
     </div>
   );
 };

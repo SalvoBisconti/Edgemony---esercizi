@@ -1,11 +1,11 @@
-import { characters } from "../../mocks/characters";
+// import { characters } from "../../mocks/characters";
 import Card from "../card";
 import "./index.css";
 
-const CardSection = ({ setModal }) => {
+const CardSection = ({ data, setModal }) => {
   return (
     <div className="cardSection">
-      {characters.map((details) => (
+      {data.map((details) => (
         <Card carData={details} setModal={setModal} />
       ))}
     </div>

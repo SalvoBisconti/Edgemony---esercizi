@@ -1,0 +1,39 @@
+.Modal {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  z-index: 10;
+  width: 400px;
+  height: 450px;
+  border-radius: 12px;
+  background-color: rgba(254, 212, 57);
+  display: flex;
+  justify-content: center;
+  border: 2px solid pink;
+  box-shadow: 0 0 20px pink;
+}
+
+.texts-modal {
+  color: rgba(240, 92, 59, 1);
+}
+.img-modal {
+  width: 180px;
+}
+
+.cit-modal {
+  color: black;
+}
