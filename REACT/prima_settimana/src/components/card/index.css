@@ -10,17 +10,26 @@
   color: white;
   background-color: rgba(255, 255, 255, 0.366);
 }
-
+.img-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85%;
+}
 .img {
-  width: 200px;
-  height: 350px;
+  width: 170px;
   object-fit: cover;
+}
+.img:hover {
+  transform: scale(1.25);
 }
 
 .bottom-area {
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  align-items: center;
+  height: 15%;
   margin: 0;
   width: 100%;
   border-end-end-radius: 12px;
@@ -33,10 +42,19 @@
 }
 
 .quote-btn {
+  height: 50px;
   cursor: pointer;
   color: white;
-  margin: 10px;
+  margin-right: 10px;
   border: 2px solid white;
   background-color: transparent;
   border-radius: 8px;
+}
+
+.quote-btn:hover {
+  background-color: rgb(211, 57, 22);
+}
+
+.quote-btn:active {
+  transform: scale(0.9);
 }
