@@ -1,3 +1,3 @@
-# Progetto prima settimna
+# Progetto prima settimana
 
-Web app quotes relative ai personaggi dei Simpson
+Web app di quotes relative ai personaggi dei Simpson
