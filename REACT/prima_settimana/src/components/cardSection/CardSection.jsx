@@ -8,7 +8,7 @@ const CardSection = ({ setModal }) => {
   useEffect(() => {
     fetch("https://thesimpsonsquoteapi.glitch.me/quotes?count=30")
       .then((res) => res.json())
-      .then((data) => setData(data));
+      .then((data) => console.log(data));
   }, []);
 
   return (
