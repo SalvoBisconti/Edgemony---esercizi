@@ -1,0 +1,28 @@
+.returnButton {
+  position: fixed;
+  bottom: 6%;
+  right: 3px;
+  height: 70px;
+  width: 70px;
+  border: 1px solid black;
+  z-index: 20;
+  border-radius: 100%;
+  background-color: rgb(253, 116, 70);
+}
+
+.text-returnBtn {
+  height: 100%;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  color: rgb(254, 212, 57);
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .returnButton {
+    right: 3%;
+  }
+}

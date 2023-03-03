@@ -4,6 +4,9 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
+        <a href name="top">
+          {" "}
+        </a>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/9/98/The_Simpsons_yellow_logo.svg"
           alt="logo"

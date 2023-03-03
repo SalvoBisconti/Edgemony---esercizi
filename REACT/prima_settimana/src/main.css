@@ -1,20 +1,29 @@
+@font-face {
+  font-family: simpsonFont;
+  src: url("../public/Simpsonfont.otf") format("opentype");
+}
+* {
+  scroll-behavior: smooth !important;
+}
 .Main {
   background-color: rgba(254, 212, 57);
-  color: black;
+  color: rgb(253, 116, 70);
   position: relative;
+  font-family: simpsonFont;
 }
 
 .darkMode {
   background-color: rgb(42, 42, 42);
-  color: rgba(254, 212, 57);
+  color: rgb(254, 212, 57);
 }
 
 .btn-mode {
+  z-index: 20;
   font-size: 1.3rem;
   cursor: pointer;
   position: absolute;
   top: 15px;
-  right: 0;
+  right: 10px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.374);
   border-radius: 100%;

@@ -1,8 +1,16 @@
-// import { characters } from "../../mocks/characters";
+import { useState, useEffect } from "react";
 import Card from "../card";
 import "./index.css";
 
-const CardSection = ({ data, setModal }) => {
+const CardSection = ({ setModal }) => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://thesimpsonsquoteapi.glitch.me/quotes?count=30")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
+
   return (
     <div className="cardSection">
       {data.map((details) => (

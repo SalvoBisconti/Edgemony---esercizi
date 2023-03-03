@@ -1,9 +1,10 @@
 .Slider {
-  border: 2px solid black;
+  border: 1px solid rgb(218, 95, 55);
   height: 400px;
   position: relative;
   margin: 20px;
   border-radius: 8px;
+  box-shadow: 0 0 15px rgb(253, 116, 70);
 }
 
 .img-slider {
