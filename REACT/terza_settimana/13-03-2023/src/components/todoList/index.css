@@ -1,0 +1,16 @@
+.TodoList {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 4px grey;
+  border-radius: 8px;
+  background-color: lightgreen;
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: green;
+}

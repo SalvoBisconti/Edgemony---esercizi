@@ -1,0 +1,15 @@
+.TodoItem {
+  padding: 10px;
+  border-bottom: 2px solid red;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.todo-text {
+  flex-grow: 1;
+  font-size: 1.2rem;
+}
