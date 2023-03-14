@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(18, 18, 47);
+}

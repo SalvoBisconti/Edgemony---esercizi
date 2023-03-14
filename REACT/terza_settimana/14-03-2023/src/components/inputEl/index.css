@@ -1,0 +1,40 @@
+.InputEl {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+form {
+  display: flex;
+  width: 300px;
+  gap: 10px;
+}
+.input-el {
+  padding: 0px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 245px;
+  background-color: transparent;
+}
+.input-el::placeholder {
+  color: whitesmoke;
+}
+
+.button {
+  border: none;
+  width: 30px;
+  background-color: rgb(37 73 106);
+  font-size: 1.7rem;
+  margin-right: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.total-input {
+  display: flex;
+  padding: 10px 0;
+  background-color: rgb(24, 24, 50);
+  box-shadow: 0 0 2px grey;
+  border-radius: 24px;
+}

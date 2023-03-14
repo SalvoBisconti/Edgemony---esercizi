@@ -1,0 +1,23 @@
+.TodoItem {
+  padding: 25px;
+  background-color: rgb(32, 61, 100);
+  border-radius: 12px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-grow: 1;
+}
+
+.todo-text {
+  flex-grow: 1;
+  font-size: 1.2rem;
+  width: 140px;
+}
+
+.trash-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
