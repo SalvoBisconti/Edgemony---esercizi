@@ -1,11 +1,11 @@
 import "./index.css";
-import Modal from "../modal";
 
 const InputEl = ({
   inputSearchEl,
   setInputSearchEl,
   setArrayEl,
   setIsModal,
+  setAddedModal,
 }) => {
   const addTodo = (e) => {
     e.preventDefault();
@@ -17,6 +17,11 @@ const InputEl = ({
           (todo) => inputSearchEl.toUpperCase() === todo.todo.toUpperCase()
         )
       ) {
+        setAddedModal(true);
+        setTimeout(() => {
+          setAddedModal(false);
+        }, 2000);
+
         return [
           ...prev,
           {

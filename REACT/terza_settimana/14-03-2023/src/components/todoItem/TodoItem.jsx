@@ -1,9 +1,13 @@
 import "./index.css";
 import { BsTrash } from "react-icons/bs";
 
-const TodoItem = ({ todo, setArrayEl }) => {
+const TodoItem = ({ todo, setArrayEl, setDeletedModal }) => {
   const onHandleClick = (element) => {
     setArrayEl((prev) => [...prev.filter((todo) => todo.id !== element)]);
+    setDeletedModal(true);
+    setTimeout(() => {
+      setDeletedModal(false);
+    }, 2000);
   };
   return (
     <div className="TodoItem">

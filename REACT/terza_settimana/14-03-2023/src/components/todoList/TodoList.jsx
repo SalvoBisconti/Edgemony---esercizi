@@ -4,7 +4,7 @@ import TodoItem from "../todoItem";
 import InputEl from "../inputEl";
 import { useState } from "react";
 
-const TodoList = ({ setIsModal }) => {
+const TodoList = ({ setIsModal, setAddedModal, setDeletedModal }) => {
   const [inputSearchEl, setInputSearchEl] = useState("");
   const [arrayEl, setArrayEl] = useState(todos);
 
@@ -16,12 +16,18 @@ const TodoList = ({ setIsModal }) => {
         arrayEl={arrayEl}
         setArrayEl={setArrayEl}
         setIsModal={setIsModal}
+        setAddedModal={setAddedModal}
       />
 
       {arrayEl
         .sort((a, b) => (a.id >= b.id ? -1 : 0))
         .map((todo) => (
-          <TodoItem key={todo.id} todo={todo} setArrayEl={setArrayEl} />
+          <TodoItem
+            key={todo.id}
+            todo={todo}
+            setArrayEl={setArrayEl}
+            setDeletedModal={setDeletedModal}
+          />
         ))}
     </div>
   );

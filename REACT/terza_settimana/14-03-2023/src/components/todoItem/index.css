@@ -1,4 +1,5 @@
 .TodoItem {
+  width: 260px;
   padding: 25px;
   background-color: rgb(32, 61, 100);
   border-radius: 12px;
@@ -11,13 +12,14 @@
 }
 
 .todo-text {
-  flex-grow: 1;
+  width: 80%;
   font-size: 1.2rem;
-  width: 140px;
   flex-grow: 1;
+  overflow: scroll;
 }
 
 .trash-icon {
+  margin-left: 15px;
   font-size: 1.2rem;
   cursor: pointer;
 }

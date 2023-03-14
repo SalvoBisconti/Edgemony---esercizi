@@ -9,11 +9,11 @@ form {
   gap: 10px;
 }
 .input-el {
-  padding: 0px 10px;
+  padding: 0px 20px;
   border: none;
   outline: none;
   cursor: pointer;
-  width: 245px;
+  width: 220px;
   background-color: transparent;
 }
 .input-el::placeholder {
@@ -33,7 +33,7 @@ form {
 
 .total-input {
   display: flex;
-  padding: 10px 0;
+  padding: 10px 10px 10px 0;
   background-color: rgb(24, 24, 50);
   box-shadow: 0 0 2px grey;
   border-radius: 24px;
