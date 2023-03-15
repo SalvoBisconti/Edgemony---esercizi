@@ -1,0 +1,13 @@
+.CardList {
+  padding: 20px;
+}
+.list-title {
+  padding: 10px 0;
+}
+.card-list {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
