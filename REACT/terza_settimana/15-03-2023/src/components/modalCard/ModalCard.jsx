@@ -11,7 +11,14 @@ const ModalCard = ({
   };
 
   const onHandleAddCart = () => {
+    const cartStorage = JSON.parse(localStorage.getItem("cartStorage")) || [];
+
     setModalCartContent((prev) => [...prev, modalContent.productData]);
+
+    localStorage.setItem(
+      "cartStorage",
+      JSON.stringify([...cartStorage, modalContent.productData])
+    );
   };
 
   return (

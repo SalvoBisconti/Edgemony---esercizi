@@ -14,7 +14,10 @@ const Header = ({ setIsCartModal, isCartModal, modalCartContent }) => {
         <li> Lorem </li>
         <li> Lorem </li>
         <li>
-          <h3 onClick={onHandleCart}> {`🛒 ${modalCartContent.length} `}</h3>
+          <h3 onClick={onHandleCart}>
+            {" "}
+            {`🛒 ${JSON.parse(localStorage.getItem("cartStorage")).length} `}
+          </h3>
         </li>
       </ul>
     </div>

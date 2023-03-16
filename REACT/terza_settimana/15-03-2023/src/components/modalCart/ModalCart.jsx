@@ -5,7 +5,8 @@ const ModalCart = ({ isCartModal, modalCartContent }) => {
     <div className={`ModalCart ${isCartModal && "modal-cart-show "}`}>
       <div className="cart-content">
         <h2> Cart</h2>
-        {modalCartContent.map((item) => (
+
+        {JSON.parse(localStorage.getItem("cartStorage")).map((item) => (
           <CartItem product={item} />
         ))}
       </div>
