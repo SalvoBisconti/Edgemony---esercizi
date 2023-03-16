@@ -1,6 +1,10 @@
 import "./index.css";
 
-const Header = () => {
+const Header = ({ setIsCartModal, isCartModal, modalCartContent }) => {
+  const onHandleCart = () => {
+    setIsCartModal(!isCartModal);
+  };
+
   return (
     <div className="Header">
       <div className="logo-sec">
@@ -9,7 +13,9 @@ const Header = () => {
       <ul className="header-list">
         <li> Lorem </li>
         <li> Lorem </li>
-        <li> Lorem </li>
+        <li>
+          <h3 onClick={onHandleCart}> {`🛒 ${modalCartContent.length} `}</h3>
+        </li>
       </ul>
     </div>
   );

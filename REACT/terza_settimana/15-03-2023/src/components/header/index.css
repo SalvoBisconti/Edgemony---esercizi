@@ -7,6 +7,7 @@
   position: fixed;
   z-index: 2;
   color: white;
+  background-color: rgb(36, 36, 36);
 }
 
 .logo-sec {

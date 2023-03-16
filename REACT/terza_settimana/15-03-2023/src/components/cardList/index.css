@@ -5,6 +5,7 @@
   padding: 10px 0;
 }
 .card-list {
+  height: 360px;
   display: flex;
   overflow-x: scroll;
   gap: 20px;

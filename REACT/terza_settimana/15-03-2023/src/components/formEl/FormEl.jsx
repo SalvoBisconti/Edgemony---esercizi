@@ -1,12 +1,13 @@
 import "./index.css";
 
-const FormEl = ({ inputEl, setInputEl, setCategory, category }) => {
+const FormEl = ({ inputEl, setInputEl }) => {
   const onHandleSubmit = (e) => {
     e.preventDefault();
-    // setCategory(inputEl);
-    {
-      console.log(inputEl);
-    }
+    // {
+    //   console.log(inputEl);
+    // }
+    // inputEl ? console.log(`Ecco: ${inputEl}`) : null;
+    setInputEl(() => inputEl);
   };
 
   return (
