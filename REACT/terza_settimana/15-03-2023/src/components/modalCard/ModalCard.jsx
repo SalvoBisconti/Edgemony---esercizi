@@ -1,23 +1,33 @@
 import "./index.css";
+import Slider from "../slider";
 
 const ModalCard = ({
   modalContent,
   setModalContent,
   setModalCartContent,
-  modalCartContent,
+  cartStorageContent,
 }) => {
   const onHandleModal = () => {
     setModalContent({ isOpen: false });
   };
 
   const onHandleAddCart = () => {
-    const cartStorage = JSON.parse(localStorage.getItem("cartStorage")) || [];
+    // setModalCartContent((prev) => [...prev, modalContent.productData]);
+    // cartStorageContent.map((item) => {
+    //   if (item.id === modalContent.productData.id) {
+    //     alert("n'avutru n vo?");
+    //   } else {
+    //     localStorage.setItem(
+    //       "cartStorage",
+    //       JSON.stringify([...cartStorageContent, modalContent.productData])
+    //     );
+    //   }
+    // });
 
     setModalCartContent((prev) => [...prev, modalContent.productData]);
-
     localStorage.setItem(
       "cartStorage",
-      JSON.stringify([...cartStorage, modalContent.productData])
+      JSON.stringify([...cartStorageContent, modalContent.productData])
     );
   };
 
@@ -30,20 +40,18 @@ const ModalCard = ({
           <p>{modalContent.productData.description}</p>
         </div>
         <div className="images-section">
-          {modalContent.productData.images.map((image, i) => (
-            <img
-              src={image}
-              alt={`image ${i + 1}`}
-              className="galery-img"
-              key={i + 1}
-            />
-          ))}
+          <Slider modalContent={modalContent} />
         </div>
-        <div className="price-section">
-          <h3> {`$ ${modalContent.productData.price} `}</h3>
-          <h3 className="cart-icon" onClick={onHandleAddCart}>
-            🛒
-          </h3>
+
+        <div className="buy-section">
+          <div className="price-section">
+            <h4 className="sale-text">{`${modalContent.productData.discountPercentage}%`}</h4>
+            <h3> {`$ ${modalContent.productData.price} `}</h3>
+          </div>
+
+          <button className="add-cart-btn" onClick={onHandleAddCart}>
+            Add to cart
+          </button>
         </div>
       </div>
     </div>

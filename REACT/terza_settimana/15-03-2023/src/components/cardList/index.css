@@ -3,9 +3,11 @@
 }
 .list-title {
   padding: 10px 0;
+  color: rgb(1, 132, 117);
+  font-size: 1.7rem;
 }
 .card-list {
-  height: 360px;
+  height: 230px;
   display: flex;
   overflow-x: scroll;
   gap: 20px;

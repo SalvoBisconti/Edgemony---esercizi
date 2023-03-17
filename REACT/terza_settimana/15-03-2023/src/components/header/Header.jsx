@@ -1,23 +1,36 @@
 import "./index.css";
+import { useState } from "react";
+import { HiShoppingCart, HiOutlineShoppingCart } from "react-icons/hi";
 
-const Header = ({ setIsCartModal, isCartModal, modalCartContent }) => {
+const Header = ({
+  setIsCartModal,
+  isCartModal,
+  cartStorageContent,
+  setModalCartContent,
+}) => {
   const onHandleCart = () => {
     setIsCartModal(!isCartModal);
   };
-
   return (
     <div className="Header">
       <div className="logo-sec">
-        <img src="" alt="logo" className="header-logo" />
+        <img
+          src="../../../public/logo.png"
+          alt="logo"
+          className="header-logo"
+        />
       </div>
       <ul className="header-list">
-        <li> Lorem </li>
-        <li> Lorem </li>
+        <li> </li>
+        <li> </li>
         <li>
-          <h3 onClick={onHandleCart}>
-            {" "}
-            {`🛒 ${JSON.parse(localStorage.getItem("cartStorage")).length} `}
-          </h3>
+          <div className="cart-element-header">
+            <HiOutlineShoppingCart
+              onClick={onHandleCart}
+              className="header-cart-icon"
+            />
+            <p className="cart-elements-number">{cartStorageContent.length}</p>
+          </div>
         </li>
       </ul>
     </div>

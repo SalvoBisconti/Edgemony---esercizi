@@ -17,14 +17,15 @@ function App() {
   });
   const [isCartModal, setIsCartModal] = useState(false);
   const [modalCartContent, setModalCartContent] = useState([]);
-
+  const cartStorageContent =
+    JSON.parse(localStorage.getItem("cartStorage")) || [];
   return (
     <div className="App">
-      {console.log(modalCartContent)}
       <Header
         setIsCartModal={setIsCartModal}
         isCartModal={isCartModal}
         modalCartContent={modalCartContent}
+        cartStorageContent={cartStorageContent}
       />
       <Hero setInputEl={setInputEl} inputEl={inputEl} />
       <MiniCardList endpoint={"/products"} inputEl={inputEl} />
@@ -40,13 +41,15 @@ function App() {
           modalContent={modalContent}
           setModalContent={setModalContent}
           setModalCartContent={setModalCartContent}
+          cartStorageContent={cartStorageContent}
         />
       )}
+
       {isCartModal && (
         <ModalCart
-          modalCartContent={modalCartContent}
-          setModalCartContent={setModalCartContent}
           isCartModal={isCartModal}
+          cartStorageContent={cartStorageContent}
+          setModalCartContent={setModalCartContent}
         />
       )}
     </div>

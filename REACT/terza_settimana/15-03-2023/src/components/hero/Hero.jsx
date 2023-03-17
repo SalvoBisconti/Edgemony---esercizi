@@ -4,7 +4,7 @@ const Hero = ({ setInputEl, inputEl, setCategory, category }) => {
   return (
     <div className="Hero">
       <img
-        src="https://t3.ftcdn.net/jpg/01/17/33/22/360_F_117332203_ekwDZkViF6M3itApEFRIH4844XjJ7zEb.jpg"
+        src="https://www.neolo.com/blog/wp-content/uploads/2020/04/Consejos-para-tiendas-online-2020.jpg"
         alt="hero image"
         className="hero-img"
       />

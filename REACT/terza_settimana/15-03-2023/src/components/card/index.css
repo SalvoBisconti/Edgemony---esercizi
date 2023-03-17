@@ -1,16 +1,16 @@
 .Card {
-  height: 300px;
-  width: 200px;
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
+  height: 220px;
+  width: 150px;
+  border-radius: 12px;
   cursor: pointer;
   transition: transform 0.35s;
   scroll-snap-align: start;
+  background-color: whitesmoke;
 }
 
 .card-img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 50%;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
 }
@@ -19,8 +19,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   z-index: 3;
   justify-content: space-between;
-  font-size: 1rem;
+}
+.card-bio-area {
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+  flex-grow: 1;
+}
+.card-price-area {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-price-area h5 {
+  margin-right: 5px;
+  color: white;
+  background-color: tomato;
+  border-radius: 4px;
+  padding: 2px;
+  font-size: 0.7rem;
 }

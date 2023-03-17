@@ -1,21 +1,20 @@
 .Header {
   width: 100vw;
-  height: 50px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  align-items: center;
+  padding: 15px 20px;
   position: fixed;
   z-index: 2;
-  color: white;
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(1, 132, 117);
 }
 
 .logo-sec {
   width: 60%;
 }
 .header-logo {
-  width: 50px;
-  height: 50px;
+  width: 150px;
 }
 
 .header-list {
@@ -23,4 +22,23 @@
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+}
+.cart-element-header {
+  position: relative;
+}
+.header-cart-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.cart-elements-number {
+  position: absolute;
+  top: -12px;
+  right: -18px;
+  color: white;
+  border-radius: 100%;
+  background-color: black;
+  padding: 0px 5px;
+  font-size: 0.9rem;
+  text-align: center;
 }

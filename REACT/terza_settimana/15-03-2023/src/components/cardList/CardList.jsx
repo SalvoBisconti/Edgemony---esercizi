@@ -11,7 +11,7 @@ const CardList = ({ endpoint, title, setModalContent }) => {
 
   return (
     <div className="CardList">
-      <h1 className="list-title"> {title}</h1>
+      <h2 className="list-title"> {title}</h2>
       <div className="card-list">
         {productsData.map((product) => (
           <Card
