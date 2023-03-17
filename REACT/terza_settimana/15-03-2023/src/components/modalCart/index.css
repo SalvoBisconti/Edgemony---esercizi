@@ -2,7 +2,6 @@
   position: fixed;
   top: 50px;
   right: -300px;
-  height: auto;
   width: 50vw;
   background-color: white;
   z-index: 5;
@@ -12,6 +11,8 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  /* height: 100%;
+  overflow: scroll; */
 }
 
 .modal-cart-show {
@@ -30,4 +31,13 @@
   padding: 5px;
   height: 100%;
   overflow: scroll;
+}
+.empty-cart-text {
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 800px) {
+  .ModalCart {
+    width: 25vw;
+  }
 }

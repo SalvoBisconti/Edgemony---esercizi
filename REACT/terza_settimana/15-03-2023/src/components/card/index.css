@@ -7,9 +7,12 @@
   scroll-snap-align: start;
   background-color: whitesmoke;
 }
+.Card:hover {
+  box-shadow: 0 0 2px grey;
+}
 
 .card-img {
-  width: 150px;
+  width: 140px;
   height: 50%;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
@@ -37,11 +40,21 @@
   align-items: center;
 }
 
-.card-price-area h5 {
+.card-sale-icon {
   margin-right: 5px;
   color: white;
   background-color: tomato;
   border-radius: 4px;
   padding: 2px;
   font-size: 0.7rem;
+  animation: flip-item 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+@keyframes flip-item {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
 }

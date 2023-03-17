@@ -24,7 +24,7 @@ const CartItem = ({ product, setModalCartContent, cartStorageContent }) => {
           </div>
         </div>
         <div className="bottom-cart-item-area">
-          <p>qty:</p>
+          <p>{`qty: ${product.quantity}`}</p>
           <BsFillTrash3Fill
             className="delete-item-icon"
             onClick={() => onHandleDelate(product)}

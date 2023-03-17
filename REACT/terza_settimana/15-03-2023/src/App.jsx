@@ -15,10 +15,12 @@ function App() {
     productData: {},
     isOpen: false,
   });
+
   const [isCartModal, setIsCartModal] = useState(false);
   const [modalCartContent, setModalCartContent] = useState([]);
   const cartStorageContent =
     JSON.parse(localStorage.getItem("cartStorage")) || [];
+  console.log(modalCartContent);
   return (
     <div className="App">
       <Header

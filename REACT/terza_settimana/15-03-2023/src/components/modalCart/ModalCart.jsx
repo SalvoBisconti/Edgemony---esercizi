@@ -11,13 +11,19 @@ const ModalCart = ({
       <div className="cart-content">
         <h2 className="cart-title"> Your cart</h2>
         <div className="items-cart-list">
-          {cartStorageContent.map((item) => (
-            <CartItem
-              product={item}
-              setModalCartContent={setModalCartContent}
-              cartStorageContent={cartStorageContent}
-            />
-          ))}
+          {!cartStorageContent.length ? (
+            <p className="empty-cart-text">
+              Your cart is empty... add a new product
+            </p>
+          ) : (
+            cartStorageContent.map((item) => (
+              <CartItem
+                product={item}
+                setModalCartContent={setModalCartContent}
+                cartStorageContent={cartStorageContent}
+              />
+            ))
+          )}
         </div>
       </div>
     </div>

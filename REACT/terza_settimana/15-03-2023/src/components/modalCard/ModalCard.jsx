@@ -12,10 +12,25 @@ const ModalCard = ({
   };
 
   const onHandleAddCart = () => {
-    // setModalCartContent((prev) => [...prev, modalContent.productData]);
+    //C!! trasformo undefined in true/false
+    setModalCartContent((prev) =>
+      !!prev.find((product) => product.id === modalContent.productData.id)
+        ? [...prev]
+        : [...prev, modalContent.productData]
+    );
+    const isProductInLocalStorage = cartStorageContent.find(
+      (product) => product.id === modalContent.productData.id
+    );
     // cartStorageContent.map((item) => {
-    //   if (item.id === modalContent.productData.id) {
-    //     alert("n'avutru n vo?");
+    //   if (cartStorageContent.length) {
+    //     if (item.id === modalContent.productData.id) {
+    //       alert("n'avutru n vo?");
+    //     } else {
+    //       localStorage.setItem(
+    //         "cartStorage",
+    //         JSON.stringify([...cartStorageContent, modalContent.productData])
+    //       );
+    //     }
     //   } else {
     //     localStorage.setItem(
     //       "cartStorage",
@@ -23,12 +38,27 @@ const ModalCard = ({
     //     );
     //   }
     // });
+    if (isProductInLocalStorage) {
+      //FIXME:  da risolvere l'aumento della quantità
+      // cartStorageContent.map((item) => {
+      //   item.id === modalContent.productData.id;
+      //   setModalCartContent((prev) =>
+      //     item.id === modalContent.productData.id
+      //       ? [...prev]
+      //       : [...prev, modalContent.productData.quantity++]
+      //   );
+      // });
+      // console.log(cartStorageContent);
 
-    setModalCartContent((prev) => [...prev, modalContent.productData]);
-    localStorage.setItem(
-      "cartStorage",
-      JSON.stringify([...cartStorageContent, modalContent.productData])
-    );
+      alert(`${modalContent.productData.title} è già presente nel carrello!`);
+    } else {
+      localStorage.setItem(
+        "cartStorage",
+        JSON.stringify([...cartStorageContent, modalContent.productData])
+      );
+
+      alert(`${modalContent.productData.title} aggiunto al carrello!`);
+    }
   };
 
   return (

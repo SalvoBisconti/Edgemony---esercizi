@@ -6,7 +6,14 @@ import { useState, useEffect } from "react";
 const CardList = ({ endpoint, title, setModalContent }) => {
   const [productsData, setProductsData] = useState([]);
   useEffect(() => {
-    GET(endpoint).then(({ products }) => setProductsData(products));
+    GET(endpoint).then(({ products }) =>
+      setProductsData(
+        products.map((item) => {
+          item.quantity = 1;
+          return item;
+        })
+      )
+    );
   }, []);
 
   return (

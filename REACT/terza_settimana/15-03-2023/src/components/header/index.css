@@ -34,11 +34,11 @@
 .cart-elements-number {
   position: absolute;
   top: -12px;
-  right: -18px;
+  right: -20px;
   color: white;
   border-radius: 100%;
   background-color: black;
-  padding: 0px 5px;
-  font-size: 0.9rem;
+  padding: 3px 7px;
+  font-size: 0.8rem;
   text-align: center;
 }
