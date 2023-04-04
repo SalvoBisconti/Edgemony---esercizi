@@ -1,0 +1,51 @@
+.Modal {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(19, 19, 19, 0.4);
+    position: fixed;
+    top: 0;
+  }
+
+  .content {
+    z-index: 2;
+    height: 60%;
+    width: 90%;
+    background-color: rgba(19, 18, 18, 0.8);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      .input {
+        height: 150px;
+        width: 400px;
+        outline: none;
+        border-radius: 8px;
+      }
+      button {
+        width: 30%;
+        height: 40px;
+        border-radius: 8px;
+        border: 0;
+        background-color: whitesmoke;
+        cursor: pointer;
+      }
+    }
+  }
+}
