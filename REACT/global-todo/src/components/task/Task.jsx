@@ -1,23 +1,29 @@
-import { useState, useEffect } from "react";
-import { GET } from "../../utils/http";
 import { randomHSLA } from "../../utils/funcs";
 import styles from "./index.module.scss";
+import { useCallback, useContext } from "react";
+import { Context } from "../../store";
 
 const Task = ({ taskData }) => {
-  const [userData, setUserData] = useState({});
+  const { state, dispatch } = useContext(Context);
 
-  useEffect(() => {
-    GET(`users/${taskData.userId}`).then((data) => setUserData(data));
-  }, []);
+  const onHandleEditState = () =>
+    dispatch({ type: "EDIT_TASK", payload: taskData.id });
+
+  const onHandleDeleteTask = () =>
+    dispatch({ type: "DELETE_TASK", payload: taskData.id });
 
   return (
-    <div className={styles.Task} style={{ background: `${randomHSLA()}` }}>
+    <div
+      className={styles.Task}
+      style={{ background: `${randomHSLA()}` }}
+      onClick={onHandleEditState}
+    >
       <div className={styles.info}>
-        <img src={userData.image} alt={userData.username} />
-        {taskData.completed && <button>V</button>}
+        <img src={taskData.image} alt={taskData.username} />
+        {taskData.completed && <button onClick={onHandleDeleteTask}>V</button>}
       </div>
       <div className={styles.content}>
-        <span>{userData.username}</span>
+        <span>{taskData.username}</span>
         <p>{taskData.todo}</p>
       </div>
     </div>
