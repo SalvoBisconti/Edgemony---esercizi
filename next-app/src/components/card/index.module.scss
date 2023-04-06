@@ -1,0 +1,21 @@
+.Card {
+  height: 100%;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 0 4px grey;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .img {
+    position: relative;
+    width: 100%;
+    height: 50%;
+  }
+}

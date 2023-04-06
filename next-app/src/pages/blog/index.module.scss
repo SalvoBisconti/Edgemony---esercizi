@@ -1,0 +1,11 @@
+.body {
+  min-height: 90vh;
+  padding: 40px;
+
+  .card {
+    box-shadow: 0 0 4px grey;
+    padding: 20px;
+    border-radius: 12px;
+    height: 400px;
+  }
+}
